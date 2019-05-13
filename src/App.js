@@ -4,10 +4,15 @@ import { createStore, applyMiddleware } from 'redux';
 
 import { Header } from './components/common';
 
+const store = createStore();
+
 class App extends Component {
+
   render() {
     return (
-      <Header headerText="FS Keeper" />
+      <Provider store={store} >
+        <Header headerText="FS Keeper" />
+      </Provider>
     );
   }
 }
