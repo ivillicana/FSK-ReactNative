@@ -5,7 +5,7 @@ import ReduxThunk from 'redux-thunk';
 import firebase from 'firebase';
 
 import reducers from './reducers';
-import { Header } from './components/common';
+import Router from './Router';
 
 const store = createStore(reducers, {}, applyMiddleware(ReduxThunk));
 
@@ -27,7 +27,7 @@ class App extends Component {
   render() {
     return (
       <Provider store={store} >
-        <Header headerText="FS Keeper" />
+        <Router />
       </Provider>
     );
   }
