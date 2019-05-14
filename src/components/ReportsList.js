@@ -1,6 +1,6 @@
 import _ from 'lodash';
 import React, { Component } from 'react';
-import { View, Text, FlatList } from 'react-native';
+import { Text } from 'react-native';
 import { connect } from 'react-redux';
 import { reportsFetch } from '../actions';
 

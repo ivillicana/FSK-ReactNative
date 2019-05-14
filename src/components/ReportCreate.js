@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Picker, Text, ScrollView, View } from 'react-native';
+import { Picker, Text, ScrollView } from 'react-native';
 import { connect } from 'react-redux';
 import { reportFormFieldUpdate, reportCreate } from '../actions';
 import { Card, CardSection, Input, Button } from './common';
@@ -37,7 +37,6 @@ class EmployeeCreate extends Component {
 
   render() {
     return (
-      <View style={{ flex: 1 }}>
       <ScrollView>
       <Card>
         <CardSection style={{ flexDirection: 'column' }}>
@@ -120,7 +119,6 @@ class EmployeeCreate extends Component {
         </CardSection>
       </Card>
       </ScrollView>
-      </View>
     );
   }
 }
