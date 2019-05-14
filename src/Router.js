@@ -6,7 +6,7 @@ import ReportCreate from './components/ReportCreate';
 
 const RouterComponent = () => {
   return (
-    <Router>
+    <Router sceneStyle={{ backgroundColor: '#efefef', flex: 1, paddingBottom: 15 }}>
       <Scene key="root" hideNavBar>
         <Scene key="auth">
           <Scene key="login" component={LoginForm} title="Please Login" initial />
